@@ -1,5 +1,15 @@
 # Agent Skills
 
+> **About this repository:** Based on the excellent
+> [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) by
+> [Addy Osmani](https://github.com/addyosmani), shared under the MIT license.
+> This copy extends the original pack with **healthcare-oriented data science
+> skills** (marked 🏥 below) added by me, as part of my portfolio transitioning
+> into healthcare data science and AI. The original 20 engineering skills are
+> entirely Addy's work.
+
+---
+
 **Production-grade engineering skills for AI coding agents.**
 
 Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.
@@ -178,6 +188,14 @@ The commands above are the entry points. Under the hood, they activate these 20 
 | [deprecation-and-migration](skills/deprecation-and-migration/SKILL.md) | Code-as-liability mindset, compulsory vs advisory deprecation, migration patterns, zombie code removal | Removing old systems, migrating users, or sunsetting features |
 | [documentation-and-adrs](skills/documentation-and-adrs/SKILL.md) | Architecture Decision Records, API docs, inline documentation standards - document the *why* | Making architectural decisions, changing APIs, or shipping features |
 | [shipping-and-launch](skills/shipping-and-launch/SKILL.md) | Pre-launch checklists, feature flag lifecycle, staged rollouts, rollback procedures, monitoring setup | Preparing to deploy to production |
+
+---
+
+### 🏥 Data — Handle person-level data responsibly *(my additions)*
+
+| Skill | What It Does | Use When |
+| --- | --- | --- |
+| [health-data-privacy-and-deidentification](skills/health-data-privacy-and-deidentification/SKILL.md) 🏥 | A privacy gate that runs before analysis: classify columns, minimize, pseudonymize, generalize quasi-identifiers, verify k-anonymity, and keep raw data out of git. Anchored in Singapore PDPA with HIPAA/GDPR references | Any task touching person-level or health-adjacent data — EDA, modeling, sharing, or committing |
 
 ---
 
