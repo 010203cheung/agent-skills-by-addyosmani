@@ -199,6 +199,8 @@ The commands above are the entry points. Under the hood, they activate these 20 
 
 ---
 
+| Skill | What It Does | Use When |
+| --- | --- | --- |
 | [health-data-quality-validation](skills/health-data-quality-validation/SKILL.md) 🏥 | A quality gate that runs after the privacy gate: profile data, validate plausibility ranges for vitals, catch unit mix-ups and sentinel codes, check date logic, resolve duplicates without causing leakage, and treat missingness as information (MCAR/MAR/MNAR) | Loading any new dataset, merging sources, inheriting someone else's data, or when results look too good or too bad |
 
 ---
