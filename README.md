@@ -196,10 +196,8 @@ The commands above are the entry points. Under the hood, they activate these 20 
 | Skill | What It Does | Use When |
 | --- | --- | --- |
 | [health-data-privacy-and-deidentification](skills/health-data-privacy-and-deidentification/SKILL.md) 🏥 | A privacy gate that runs before analysis: classify columns, minimize, pseudonymize, generalize quasi-identifiers, verify k-anonymity, and keep raw data out of git. Anchored in Singapore PDPA with HIPAA/GDPR references | Any task touching person-level or health-adjacent data — EDA, modeling, sharing, or committing |
-
-| Skill | What It Does | Use When |
-| --- | --- | --- |
 | [health-data-quality-validation](skills/health-data-quality-validation/SKILL.md) 🏥 | A quality gate that runs after the privacy gate: profile data, validate plausibility ranges for vitals, catch unit mix-ups and sentinel codes, check date logic, resolve duplicates without causing leakage, and treat missingness as information (MCAR/MAR/MNAR) | Loading any new dataset, merging sources, inheriting someone else's data, or when results look too good or too bad |
+| [imbalanced-data-and-clinical-metrics](skills/imbalanced-data-and-clinical-metrics/SKILL.md) 🏥 | An evaluation gate run before training: set the majority-class baseline, choose metrics by the cost of false negatives vs false positives, prefer PR-AUC on rare positives, tune the decision threshold deliberately, and resample only training folds to avoid leakage | Building, tuning, comparing, or reporting any classifier — especially when the positive case is rare or accuracy looks suspiciously high |
 
 ---
 
